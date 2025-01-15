@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <div class="all">
+    <h1>今日のタスク</h1>
+
+    <div class="add">
+      <select id = rank>
+        <option value=""></option>
+        <option value="high">高</option>
+        <option value="middle">中</option>
+        <option value="low">低</option>
+      </select>
+      <div class="input">
+        <input type="text" id="task" placeholder="タスクを入力">
+        <input type="text" id="details" placeholder="詳細を入力">
+      </div>
+      <button id="addButton">追加</button>
+    </div>
+
+    <div class="list">
+      <h2>【タスク一覧】</h2>
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
